@@ -16,6 +16,11 @@ ActiveRecord::Schema.define(version: 2022_07_02_193003) do
   enable_extension "plpgsql"
 
   create_table "businesses", force: :cascade do |t|
+    t.string "name"
+    t.string "category"
+    t.string "description"
+    t.string "location"
+    t.integer "phone"
   end
 
 end
