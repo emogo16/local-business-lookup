@@ -64,7 +64,13 @@ production:
   password: <%= ENV['LOCAL_BUSINESS_LOOKUP_DATABASE_PASSWORD'] %> '''
 
 ## API Endpoints
-
+| Method | URL | Result |
+| :---         |     :---:      |          ---: |
+| GET   | `localhost:3000/`     | Returns a list of all businesses in the database    |
+| GET     | `localhost:3000/businesses`       | Returns a list of 5 businesses in the database      |
+| POST   | `http://localhost:3000/businesses/?name=test_restaurant&location=downtown&phone=123&description=veryberrysmoothies`     | Create a business     |
+| PUT    | `http://localhost:3000/businesses/3?name=Healthfreaks`       | Update business entry     |
+| DELETE   | `http://localhost:3000/businesses/[:id]`     | Deletes a Business    |
 
 ## Known Bugs
 
